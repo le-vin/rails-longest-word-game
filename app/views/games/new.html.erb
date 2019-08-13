@@ -1,0 +1,12 @@
+<h1>Find the longest possible <br> Word</h1>
+<div class="grid-container">
+<% @a.each do |li| %>
+  <div class="grid-item"><%= li %></div>
+<% end %>
+</div>
+<form action="/score" method="get">
+  <div class="form">
+    <input type="text" name="word" class="input" placeholder="Which word do you want to submit?">
+    <input type="submit" class = "btn btn-primary">
+  </div>
+</form>
